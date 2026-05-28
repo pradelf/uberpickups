@@ -6,6 +6,8 @@ Project on Unsupervised Machine Learning - KMeans and DBScan
 
 [Video presentation](https://share.vidyard.com/watch/GZq7BETXYyC3P5gZbrUWnP?)  
 
+Le Projet est hébergé sous le lien Github [https://github.com/pradelf/uberpickups.git](https://github.com/pradelf/uberpickups.git)
+
 ## Table of contents
 
 * [Project](##project)
@@ -17,7 +19,7 @@ Project on Unsupervised Machine Learning - KMeans and DBScan
 * [License](##license)
 * [Author](##author)
 
- Description de l'entreprise 📇
+Description de l'entreprise 📇
 
 Uber est l'une des startups les plus célèbres au monde. Cela a commencé comme une application de covoiturage pour les personnes qui n'avaient pas les moyens d'acheter un taxi. Maintenant, Uber a étendu ses activités à la livraison de nourriture avec Uber Eats, la livraison de colis, le transport de marchandises et même le transport urbain avec Jump Bike et Lime que la société a financés.
 
@@ -84,14 +86,15 @@ Pour lancer le projet,
    ```sh
    git clone hhttps://github.com/pradelf/uberpickups.git
    ```
-
-2. Installerles différents [packages]
+2. rapatrier les données du projet par ailleurs car trop volumineuse pour être stocker dans un dépôt git classique (ici en parallèle, DVC un utilitaire de versionning de Données est utilisé pour test. Une alternative est d'utiliser GIT LFS qui gère les gros fichiers en versionning.) Dans ce projet, nous avons un essai de versionning de données avec DVC est réalisé pour prendre en main les grands volumes de données en dehors de GIT LFS.
 
 3. Installer les librairies python
 
    ```sh
    pip3 install -r requirements.txt
    ```
+4. executer le note book pour voir l'étude des données géographique et obtenir les clusters permettant de positionner des stations de uber optimisées en fonction des pickup. Ces stations seront placées au centre des clusters retenus (ici nous concluerons sur 4 clusters)
+
 
 ## Licence
 
