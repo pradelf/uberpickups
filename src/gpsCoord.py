@@ -41,3 +41,10 @@ for index, row in df.iterrows():
 # Sauvegarder le résultat
 df.to_csv('taxi-zones-geocoded.csv', index=False)
 
+
+# Charger ton fichier CSV original
+df2 = pd.read_csv('current_bases.csv')
+def interroger_bases(base):
+    latitude = df2.loc[df2['Base'] == base, 'Latitude'].values[0]
+    longitude = df2.loc[df2['Base'] == base, 'Longitude'].values[0]
+    return latitude, longitude
