@@ -86,7 +86,7 @@ Pour lancer le projet,
    ```sh
    git clone hhttps://github.com/pradelf/uberpickups.git
    ```
-2. rapatrier les données du projet par ailleurs car trop volumineuse pour être stocker dans un dépôt git classique (ici en parallèle, DVC un utilitaire de versionning de Données est utilisé pour test. Une alternative est d'utiliser GIT LFS qui gère les gros fichiers en versionning.) Dans ce projet, nous avons un essai de versionning de données avec DVC est réalisé pour prendre en main les grands volumes de données en dehors de GIT LFS.
+2. rapatrier les données du projet dans le répertoire Data du projet.
 
 3. Installer les librairies python
 
